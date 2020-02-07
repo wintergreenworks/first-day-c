@@ -2,9 +2,8 @@ language: c
 sudo: false # only for faster builds
 script:
   - make
-  - chmod +x HelloWorld
   - ./HelloWorld
   - gcov HelloWorld.c
 
-install: make install
+install: make
 compiler: gcc
